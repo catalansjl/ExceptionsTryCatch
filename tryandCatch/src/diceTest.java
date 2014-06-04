@@ -5,42 +5,40 @@ public class diceTest {
 		// TODO Auto-generated method stub
 
 		Scanner input = new Scanner(System.in);			
-
-		Dice myRandomNumber = new Dice();
-
-		 
-		int number;
-		boolean continueLoop = true;
-		 
 	
-		 
-		 do
+	Dice myRandomNumber = new Dice();
+	
+	 
+	int number;
+	boolean continueLoop = true;
+	 
+	 do
+	 {
+		 try      //here is the try block
 		 {
-			 try
-			 {
-				 System.out.printf("Please enter a number that you want to bounce between 1 -3 \n");		 
-				 number = input.nextInt();  
-
-				 
-				 int jorge=myRandomNumber.Throw( number); 	
-				 
+			 System.out.printf("Please enter a number that you want to bounce between 1 -3 \n");		 
+			 number = input.nextInt();  
+	
 			 
-				 continueLoop = false;				 
-				 
-			 }
-			 catch( Exception exception)
-			 {
-				
-				 System.out.printf("You entered an invalid number \n");			 
-				 
-				 
-			 } 		
+			 int jorge=myRandomNumber.Throw( number); 	
+			 
 		 
-		 }while (continueLoop);
-		 
-		 	
-
-		 System.out.println( "E");
- 
-   }	 
-}	
+			 continueLoop = false;				 
+			 
+		 }
+		 catch( Exception exception)      //catch block
+		 {
+			
+			 System.out.printf("You entered an invalid number \n");			 
+			 
+			 
+		 } 		
+	 
+	 }while (continueLoop);
+	 
+	 	
+	
+	 System.out.println( "E");
+	
+	}	 
+	}	
