@@ -4,7 +4,7 @@ public class Dice {
 
 	int game;		
 
-	public int  Throw (int number) throws Exception
+	public int  Throw (int number) throws Exception  //An exeption is throw to the catch block if the number is bigger than 3
 	{		
 		for (int i=0; i<number; i++)
 		{			
